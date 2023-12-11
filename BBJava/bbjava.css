@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+/*NAVBAR START---*/
+/*Design how the bar looks like */
+.navbar ul{
+    list-style-type: none;
+    background-color: darkgrey;
+    padding: 0px;
+    margin: 0px;
+    /*breaks when not having this*/
+    overflow: hidden;
+}
+
+/*Changes how the text looks like*/
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+/*When hovering change background color*/
+.navbar a:hover{
+    background-color: rgb(211, 211, 211);
+}
+
+/* Make the navbar text not centered but go left to right*/
+.navbar li{
+    float: left;
+}
+/*NAVBAR END---*/
+
+#game {
+    margin: 0 auto;
+    width: 800px;
+}
+
+#stats {
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#buildings {
+    float: left;
+    width: 200px;
+}
+
+#doctor {
+    float: left;
+    width: 200px;
+}
+
+#nurse {
+    float: left;
+    width: 200px;
+}
+
+#patient {
+    float: left;
+    width: 200px;
+}
+
+button{
+    margin: 5px;
+    padding: 10px;
+    background-color: bisque;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.hover {
+    background-color: #3e8e43;
+}

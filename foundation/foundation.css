@@ -1,0 +1,30 @@
+/*NAVBAR START---*/
+/*Design how the bar looks like */
+.navbar ul{
+    list-style-type: none;
+    background-color: darkgrey;
+    padding: 0px;
+    margin: 0px;
+    /*breaks when not having this*/
+    overflow: hidden;
+}
+
+/*Changes how the text looks like*/
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+/*When hovering change background color*/
+.navbar a:hover{
+    background-color: rgb(211, 211, 211);
+}
+
+/* Make the navbar text not centered but go left to right*/
+.navbar li{
+    float: left;
+}
+/*NAVBAR END---*/

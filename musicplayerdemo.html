@@ -1,0 +1,64 @@
+<!-- What kind of document it is-->
+<!DOCTYPE html>
+<!-- Set the language-->
+<html lang="en">
+    <!-- Metadata for document-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Music Player</title>
+        <link rel="stylesheet" href="musicPlayerDemo\musicPlayerDemo.css">
+        <style>
+            body{
+                background-image: url("musicPlayerDemo/background.png")
+            }
+        </style>
+    </head>
+    <!-- Show content for page-->
+    <body>
+
+        <!--Navigation Bar-->
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home Home Page</a></li>
+                <li><a href="start.html">Pages</a></li>
+                <li><a href="foundation.html">Foundation</a></li>
+                <li><a href="bbjava.html">BBJava</a></li>
+                <li><a href="bbjavaerror.html">BBJavaError</a></li>
+                <li><a href="inputvalid.html">InputValid</a></li>
+                <li><a href="musicplayerdemo.html">MusicPlayerDemo</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="SongArchive.html">SongArchive</a></li>
+            </ul>
+        </nav>
+        <!-- Some contextualizing text-->
+            <!-- div to store music player-->
+                <div id="player1">
+                    <!-- get audio for music player-->
+                    <audio id="audio1" src="musicPlayerDemo\Moomimurr_Fantasmagorik.mp3"></audio>
+                    <!-- buttons that either play, pause, or stop audio-->
+                    <label style="color: white;">Moomimurr - Fantasmagorik</label><br><br>
+                    <button onclick="playAudio()">Play</button>
+                    <button onclick="pauseAudio()">Pause</button>
+                    <button onclick="stopAudio()">Stop</button>
+                </div>
+
+        <!-- Javascript -->
+        <script>
+            var audio = document.getElementById("audio1");
+
+            function playAudio(){
+                audio.play();
+            }
+
+            function pauseAudio(){
+                audio.pause();
+            }
+
+            function stopAudio(){
+                audio.pause();
+                audio.currentTime = 0;
+            }
+        </script>
+    </body>
+</html>
